@@ -1,9 +1,9 @@
-package triangletest;
+package MYUU;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class TriangleTest {
+public class testIsTriangle {
 	@Test
 	public void testIsTriangle1(){
     	Triangle t = new Triangle(-1,10,2);
@@ -22,13 +22,13 @@ public class TriangleTest {
          assertFalse("Regular",t.isTriangle(t));
         }
 	@Test
-	public void testTriangle4(){
+	public void testIsTriangle4(){
 		Triangle t = new Triangle(3,4,5);
         assertFalse("Right",t.isTriangle(t));
 	}
 
 	@Test
-	public void testGetType5(){
+	public void testIsTriangle5(){
 		Triangle t = new Triangle(3,3,4);
         assertFalse("Isoceles",t.isTriangle(t));
 	}
